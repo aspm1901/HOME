@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GameVerse - Tu mundo de juegos</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #111110;
+      background-image: url("FOTITOS/patron.png");
+      color: #FFFFFF;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 2px ;
+      text-align: left;
+      display: flex;
+      align-items: center;
+      justify-content: left;
+    }
+
+    header img {
+      height: 100px;
+      margin-right: 20px;
+      border: solid 5px #5e315f;
+      
+    }
+    header h1 {
+      font-size: 30px;
+      margin: 0;
+    }
+    .container {
+      width: 80%;
+      margin: 20px auto;
+      overflow: hidden;
+    }
+    #main-img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    section {
+      padding: 20px;
+      border-bottom: 0.5px solid #ccc;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+    h1, h2 {
+      color: #e2c7e4;
+      text-align: center;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+    .titulo {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+      border-radius: 20px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+      font-size: 36px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      backdrop-filter: blur(10px);
+    }
+    p {
+      line-height: 1.6;
+      font-size: 18px;
+      text-align: justify;
+    }
+    #products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .product-card {
+      padding: 10px;
+      background-color: rgba(0, 0, 0, 0.7); 
+      border-radius: 10px;
+      box-shadow: 10px rgba(0, 0, 0, 0.5);
+      text-align: center;
+    }
+    .product-card img {
+      width: 100%;
+      max-width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+    .product-card p {
+      margin-top: 10px;
+      font-size: 16px;
+      color: #e2c7e4;
+      text-align: center;
+    }
+    .imagenprincipal {
+      width: 60%;
+      height: auto;
+      margin-bottom: 20px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 10px;
+      border: solid 5px #5e315f;
+    }
+    .letrarticulo {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      word-spacing: 2px;
+      text-align: justify;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: left;
+      padding: 10px 50px;
+      margin-top: 20px;
+      font-size: 14px;
+    }
+    footer address {
+      font-style: italic;
+    }
+    .Ps5s {border: solid 5px rgb(94, 49, 95);   
+    }
+    .Nintendos {border: solid 5px rgb(94, 49, 95);
+    }
+    .Xboxs {border: solid 5px rgb(94, 49, 95);
+    }
+    .todos-productos {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .todos-productos a {
+        font-size: 24px;
+        color: #f59bf7;
+        text-decoration: none;
+        border: solid 2px #f59bf7;
+        padding: 10px 20px;
+        border-radius: 10px;
+        display: inline-block;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        backdrop-filter: blur(100px);
+      }
+      .todos-productos a:hover {
+        background-color: #f59bf7;
+        color: #111110;
+      
+      }
+    footer a {
+        font-size: 25px;
+        color: #e2c7e4;
+        text-decoration: line;
+        display: block;
+        margin-bottom: 5px;
+        text-align: center;
+      }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="FOTITOS/logo.png" alt="Logo GameVerse" />
+    <h1>GameVerse</h1>
+  </header>
+
+  <div class="container">
+    <h2 style="color: #f59bf7;" class="titulo">¡Bienvenido a GameVerse, tu mundo gamer!</h2>
+
+    <section id="main">
+      <img src="FOTITOS/imagengrande.jpg" alt="Imagen principal" class="imagenprincipal" />
+      <h2 style="color: #9f5ea0;">Acerca de nosotros</h2>
+      <p class="letrarticulo">
+        En GameVerse, nuestra pasión por los videojuegos es lo que nos impulsa. Somos un equipo de entusiastas que vive y respira este emocionante mundo,
+         y nuestro objetivo es compartir esa pasión contigo. Te ofrecemos un catálogo cuidadosamente seleccionado, lleno de opciones para jugadores de 
+         todas las edades y preferencias. Además, nos enorgullecemos de brindar una atención al cliente excepcional y un soporte técnico de primer nivel, 
+         asegurando que tu experiencia de juego sea siempre la mejor.
+      </p>
+    </section>
+
+    <section id="products">
+      <h2 style="color: #9f5ea0;">Productos destacados</h2>
+      <div class="product-card">
+        <img src="FOTITOS/ps5.png" class="Ps5s" alt="PlayStation 5" />
+        <p>PlayStation 5</p>
+      </div>
+      <div class="product-card">
+        <img src="FOTITOS/xbox.png" class="Xboxs" alt="Xbox Series X" />
+        <p>Xbox Series X</p>
+      </div>
+      <div class="product-card">
+        <img src="FOTITOS/switch.png" class="Nintendos" alt="Nintendo Switch OLED" />
+        <p>Nintendo Switch OLED</p>
+      </div>
+    </section>
+  </div>
+  <div class="todos-productos">
+    <a href="productos.html">Ver todos nuestros productos</a>
+  </div>
+  ##cambiar esta huevada
+  <footer>
+    <a href="https://aspm1901.github.io/Contact-us-page/" target="_top">¡Contáctanos!</a> 
+    <p>Nuestra dirección es: <address>Madre de Dios 371 - La Molina</address></p>
+    <p>Número de contacto: +51 960 172 519</p>
+    <small>2024 Fundamentos de diseño web - Todos los derechos reservados</small>
+  </footer>
+</body>
+</html>
